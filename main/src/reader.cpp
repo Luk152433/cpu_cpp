@@ -48,5 +48,5 @@ void rea::Reader::write()
         i++;
     }
     std::cout<<'\n';
-
+ 
 }
