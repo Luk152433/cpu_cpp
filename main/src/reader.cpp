@@ -12,7 +12,7 @@ void rea::Reader::OpenSourceFile()
     infile.open(path);
     return;
 }
-
+ 
 void rea::Reader::ReOpenSourceFile()
 {
     infile.close();
