@@ -18,6 +18,7 @@ namespace rea{
             void ReOpenSourceFile();
             void CloseSourceFile();
             void ReadSourceFile();
+            std::vector<std::string>* GetDate();
             void write();
     };
     

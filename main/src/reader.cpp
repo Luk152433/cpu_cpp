@@ -40,6 +40,11 @@ void rea::Reader::ReadSourceFile()
     }
 }
 
+std::vector<std::string>* rea::Reader::GetDate()
+{
+    return &vec;
+}
+
 void rea::Reader::write()
 {   int i=0;
     while (i<2)

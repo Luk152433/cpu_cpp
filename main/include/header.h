@@ -8,6 +8,7 @@
 #include <sys/sysinfo.h>
 #include "reader.h"
 #include "thread.h"
+#include "buffer.h"
 
 
  
