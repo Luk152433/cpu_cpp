@@ -31,12 +31,12 @@ void rea::Reader::ReadSourceFile()
     std::string line{};
     vec.clear();
     std::vector<std::string>::iterator iter=vec.begin();
-
-    while(getline(infile,line)){
+    int i=0;
+    while(getline(infile,line)  && i<2   ){
         
         vec.push_back(line);
         line.clear();
-
+        i++;
     }
 }
 

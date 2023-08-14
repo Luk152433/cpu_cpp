@@ -189,6 +189,18 @@ src/CMakeFiles/Function.dir/reader.cpp.o: /home/acad/Documents/c++/CPU/main/src/
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/queue \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_queue.h \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/list.tcc \
   /usr/include/c++/11/iterator \
   /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/thread \
@@ -197,7 +209,6 @@ src/CMakeFiles/Function.dir/reader.cpp.o: /home/acad/Documents/c++/CPU/main/src/
   /usr/include/c++/11/utility \
   /usr/include/c++/11/bits/stl_relops.h \
   /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/bits/unique_ptr.h \
@@ -207,6 +218,13 @@ src/CMakeFiles/Function.dir/reader.cpp.o: /home/acad/Documents/c++/CPU/main/src/
   /usr/include/c++/11/limits \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/bits/parse_numbers.h \
+  /usr/include/c++/11/mutex \
+  /usr/include/c++/11/bits/std_mutex.h \
+  /usr/include/c++/11/bits/unique_lock.h \
+  /usr/include/c++/11/condition_variable \
+  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/ext/concurrence.h \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -231,7 +249,8 @@ src/CMakeFiles/Function.dir/reader.cpp.o: /home/acad/Documents/c++/CPU/main/src/
   /usr/include/asm-generic/posix_types.h \
   /usr/include/linux/const.h \
   /home/acad/Documents/c++/CPU/main/include/reader.h \
-  /home/acad/Documents/c++/CPU/main/include/thread.h
+  /home/acad/Documents/c++/CPU/main/include/thread.h \
+  /home/acad/Documents/c++/CPU/main/include/buffer.h
 
 src/CMakeFiles/Function.dir/thread.cpp.o: /home/acad/Documents/c++/CPU/main/src/thread.cpp \
   /usr/include/stdc-predef.h \
@@ -421,6 +440,18 @@ src/CMakeFiles/Function.dir/thread.cpp.o: /home/acad/Documents/c++/CPU/main/src/
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/queue \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_queue.h \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/list.tcc \
   /usr/include/c++/11/iterator \
   /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/thread \
@@ -429,7 +460,6 @@ src/CMakeFiles/Function.dir/thread.cpp.o: /home/acad/Documents/c++/CPU/main/src/
   /usr/include/c++/11/utility \
   /usr/include/c++/11/bits/stl_relops.h \
   /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/bits/unique_ptr.h \
@@ -439,6 +469,13 @@ src/CMakeFiles/Function.dir/thread.cpp.o: /home/acad/Documents/c++/CPU/main/src/
   /usr/include/c++/11/limits \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/bits/parse_numbers.h \
+  /usr/include/c++/11/mutex \
+  /usr/include/c++/11/bits/std_mutex.h \
+  /usr/include/c++/11/bits/unique_lock.h \
+  /usr/include/c++/11/condition_variable \
+  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/ext/concurrence.h \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -463,8 +500,11 @@ src/CMakeFiles/Function.dir/thread.cpp.o: /home/acad/Documents/c++/CPU/main/src/
   /usr/include/asm-generic/posix_types.h \
   /usr/include/linux/const.h \
   /home/acad/Documents/c++/CPU/main/include/reader.h \
-  /home/acad/Documents/c++/CPU/main/include/thread.h
+  /home/acad/Documents/c++/CPU/main/include/thread.h \
+  /home/acad/Documents/c++/CPU/main/include/buffer.h
 
+
+/home/acad/Documents/c++/CPU/main/include/buffer.h:
 
 /home/acad/Documents/c++/CPU/main/include/reader.h:
 
@@ -484,6 +524,8 @@ src/CMakeFiles/Function.dir/thread.cpp.o: /home/acad/Documents/c++/CPU/main/src/
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
+/usr/include/c++/11/bits/unique_lock.h:
+
 /usr/include/c++/11/bits/parse_numbers.h:
 
 /usr/include/c++/11/limits:
@@ -492,13 +534,19 @@ src/CMakeFiles/Function.dir/thread.cpp.o: /home/acad/Documents/c++/CPU/main/src/
 
 /usr/include/c++/11/bits/refwrap.h:
 
-/usr/include/c++/11/bits/uses_allocator.h:
-
 /usr/include/c++/11/array:
 
 /usr/include/c++/11/bits/stl_relops.h:
 
 /usr/include/c++/11/bits/std_thread.h:
+
+/usr/include/c++/11/bits/stl_list.h:
+
+/usr/include/c++/11/bits/uses_allocator.h:
+
+/usr/include/c++/11/bits/stl_heap.h:
+
+/usr/include/c++/11/bits/stl_deque.h:
 
 /usr/include/c++/11/bits/vector.tcc:
 
@@ -586,7 +634,11 @@ src/CMakeFiles/Function.dir/thread.cpp.o: /home/acad/Documents/c++/CPU/main/src/
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
+/usr/include/c++/11/bits/shared_ptr.h:
+
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/c++/11/ext/aligned_buffer.h:
 
 /usr/include/endian.h:
 
@@ -597,6 +649,8 @@ src/CMakeFiles/Function.dir/thread.cpp.o: /home/acad/Documents/c++/CPU/main/src/
 /usr/include/stdlib.h:
 
 /usr/include/linux/const.h:
+
+/usr/include/c++/11/bits/stl_queue.h:
 
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
@@ -672,6 +726,8 @@ src/CMakeFiles/Function.dir/thread.cpp.o: /home/acad/Documents/c++/CPU/main/src/
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
+/usr/include/c++/11/deque:
+
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/c++/11/ios:
@@ -689,6 +745,8 @@ src/CMakeFiles/Function.dir/thread.cpp.o: /home/acad/Documents/c++/CPU/main/src/
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /home/acad/Documents/c++/CPU/main/include/thread.h:
+
+/usr/include/c++/11/queue:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
@@ -742,6 +800,8 @@ src/CMakeFiles/Function.dir/thread.cpp.o: /home/acad/Documents/c++/CPU/main/src/
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
+/usr/include/c++/11/list:
+
 /usr/include/c++/11/bits/exception_ptr.h:
 
 /usr/include/c++/11/ext/string_conversions.h:
@@ -752,7 +812,13 @@ src/CMakeFiles/Function.dir/thread.cpp.o: /home/acad/Documents/c++/CPU/main/src/
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
+/usr/include/c++/11/condition_variable:
+
+/usr/include/c++/11/bits/std_mutex.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+
+/usr/include/c++/11/bits/list.tcc:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
 
@@ -862,6 +928,8 @@ src/CMakeFiles/Function.dir/thread.cpp.o: /home/acad/Documents/c++/CPU/main/src/
 
 /usr/include/x86_64-linux-gnu/sys/sysinfo.h:
 
+/usr/include/c++/11/ext/concurrence.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
 /usr/include/c++/11/bits/cpp_type_traits.h:
@@ -882,15 +950,21 @@ src/CMakeFiles/Function.dir/thread.cpp.o: /home/acad/Documents/c++/CPU/main/src/
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
+/usr/include/c++/11/mutex:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/include/c++/11/bits/allocated_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/c++/11/ext/new_allocator.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/include/c++/11/bits/shared_ptr_base.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
@@ -905,6 +979,8 @@ src/CMakeFiles/Function.dir/thread.cpp.o: /home/acad/Documents/c++/CPU/main/src/
 /usr/include/c++/11/bits/locale_classes.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
+
+/usr/include/c++/11/bits/deque.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
