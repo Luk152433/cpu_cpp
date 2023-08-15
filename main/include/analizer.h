@@ -8,7 +8,7 @@ namespace ana{
     private:
         typedef struct AssignDateS
         {
-            std::string nname{};
+            std::string nname;
             long user{};
             long nice{};
             long system{};
@@ -27,7 +27,7 @@ namespace ana{
     
 
     public:
-        Analizer(uint8_t CoreNum);
+        Analizer(int CoreNum);
         ~Analizer();
     };
     
