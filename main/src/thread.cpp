@@ -55,11 +55,11 @@ void RunAnalizer(){
         ra_prod.notify_one();
         }  
         
-        // std::cout<<temp[0][0];
-        // std::cout<<temp[1];
-        for (const std::string& str : temp) {
-    std::cout << str << std::endl;
-}
+        // std::cout<<temp[0];
+//         std::cout<<temp[1];
+          for (const std::string& str : temp) {
+      std::cout << str << std::endl;
+        }
 
          i--;
        sleep(1);
