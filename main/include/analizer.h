@@ -8,7 +8,7 @@ namespace ana{
     private:
         typedef struct AssignDateS
         {
-            std::string nname;
+            std::string cpuName{};
             long user{};
             long nice{};
             long system{};
@@ -22,13 +22,18 @@ namespace ana{
 
         }AssignDate;
 
-        std::unique_ptr<AssignDateS> ptrCurrentDate{};
-        std::unique_ptr<AssignDateS> ptrPrevDate{};
+        std::unique_ptr<AssignDateS[]> ptrCurrentDate{};
+        std::unique_ptr<AssignDateS[]> ptrPrevDate{};
+        std::unique_ptr<AssignDateS[]> TempPtr{};
     
 
     public:
-        Analizer(int CoreNum);
+        Analizer();
+        Analizer(int nr);
         ~Analizer();
+
+        void SetRawData(std::vector<std::string> buferDate);
+
     };
     
   

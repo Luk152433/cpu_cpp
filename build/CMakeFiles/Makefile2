@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/acad/Documents/c++/CPU/main
+CMAKE_SOURCE_DIR = /home/acad/Documents/CPU/cpu_cpp/main
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/acad/Documents/c++/CPU/build
+CMAKE_BINARY_DIR = /home/acad/Documents/CPU/cpu_cpp/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -98,14 +98,14 @@ src/clean: src/CMakeFiles/Function.dir/clean
 CMakeFiles/CPU_USAGE.dir/all: src/CMakeFiles/Function.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPU_USAGE.dir/build.make CMakeFiles/CPU_USAGE.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPU_USAGE.dir/build.make CMakeFiles/CPU_USAGE.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/acad/Documents/c++/CPU/build/CMakeFiles --progress-num=1,2 "Built target CPU_USAGE"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/acad/Documents/CPU/cpu_cpp/build/CMakeFiles --progress-num=1,2 "Built target CPU_USAGE"
 .PHONY : CMakeFiles/CPU_USAGE.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CPU_USAGE.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/acad/Documents/c++/CPU/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/acad/Documents/CPU/cpu_cpp/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CPU_USAGE.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/acad/Documents/c++/CPU/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/acad/Documents/CPU/cpu_cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/CPU_USAGE.dir/rule
 
 # Convenience name for target.
@@ -124,14 +124,14 @@ CMakeFiles/CPU_USAGE.dir/clean:
 src/CMakeFiles/Function.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Function.dir/build.make src/CMakeFiles/Function.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Function.dir/build.make src/CMakeFiles/Function.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/acad/Documents/c++/CPU/build/CMakeFiles --progress-num=3,4,5 "Built target Function"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/acad/Documents/CPU/cpu_cpp/build/CMakeFiles --progress-num=3,4,5,6 "Built target Function"
 .PHONY : src/CMakeFiles/Function.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/Function.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/acad/Documents/c++/CPU/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/acad/Documents/CPU/cpu_cpp/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Function.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/acad/Documents/c++/CPU/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/acad/Documents/CPU/cpu_cpp/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/Function.dir/rule
 
 # Convenience name for target.

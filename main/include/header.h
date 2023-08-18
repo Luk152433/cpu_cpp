@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <sstream>
 #include <string>
 #include <vector>
 #include <queue>
@@ -11,6 +12,7 @@
 #include <unistd.h>
 #include <sys/sysinfo.h>
 #include <memory>
+#include <bits/stdc++.h>
 #include "reader.h"
 #include "thread.h"
 #include "buffer.h"

@@ -42,6 +42,7 @@ void RunReader(){
 void RunAnalizer(){
 
  int i=30;
+   ana::Analizer Obj_Analizer(2);
 
  while (i)
     {   
@@ -51,15 +52,17 @@ void RunAnalizer(){
         std::unique_lock<std::mutex> Cons_Ana(ra_mut);
         ra_cons.wait(Cons_Ana,[] () { return Obj_BuferRedAna.GetValueUseBuf()>0;});
 
-        temp=(Obj_BuferRedAna.bufferGetValue());
+        //temp=(Obj_BuferRedAna.bufferGetValue());
+        Obj_Analizer.SetRawData(Obj_BuferRedAna.bufferGetValue());
+
         ra_prod.notify_one();
         }  
         
         // std::cout<<temp[0];
 //         std::cout<<temp[1];
-          for (const std::string& str : temp) {
-      std::cout << str << std::endl;
-        }
+     //      for (const std::string& str : temp) {
+      // std::cout << str << std::endl;
+       //  }
 
          i--;
        sleep(1);

@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/acad/Documents/c++/CPU/main/main.cpp" "CMakeFiles/CPU_USAGE.dir/main.cpp.o" "gcc" "CMakeFiles/CPU_USAGE.dir/main.cpp.o.d"
+  "/home/acad/Documents/CPU/cpu_cpp/main/main.cpp" "CMakeFiles/CPU_USAGE.dir/main.cpp.o" "gcc" "CMakeFiles/CPU_USAGE.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/acad/Documents/c++/CPU/build/src/CMakeFiles/Function.dir/DependInfo.cmake"
+  "/home/acad/Documents/CPU/cpu_cpp/build/src/CMakeFiles/Function.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
