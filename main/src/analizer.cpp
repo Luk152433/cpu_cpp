@@ -58,3 +58,15 @@ ana::Analizer::~Analizer(){
 
     return;
  }
+
+
+
+void ana::Analizer::changePtr()
+{
+    TempPtr=std::move(ptrPrevDate);
+    ptrPrevDate=std::move(ptrCurrentDate);
+    ptrCurrentDate=std::move(TempPtr);
+
+    return;
+}
+

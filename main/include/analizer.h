@@ -33,7 +33,7 @@ namespace ana{
         ~Analizer();
 
         void SetRawData(std::vector<std::string> buferDate);
-
+        void changePtr();
     };
     
   

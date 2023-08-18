@@ -64,6 +64,8 @@ void RunAnalizer(){
       // std::cout << str << std::endl;
        //  }
 
+        Obj_Analizer.changePtr();
+
          i--;
        sleep(1);
     }
