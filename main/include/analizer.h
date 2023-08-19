@@ -25,7 +25,7 @@ namespace ana{
         std::unique_ptr<AssignDateS[]> ptrCurrentDate{};
         std::unique_ptr<AssignDateS[]> ptrPrevDate{};
         std::unique_ptr<AssignDateS[]> TempPtr{};
-        std::unique_ptr<long[]> ptrAllPercentValue{};
+        std::vector<long> AllPercentValue{};
 
     public:
         Analizer();
@@ -36,6 +36,7 @@ namespace ana{
         void CountRate();
         void changePtr();
          void write();
+         std::vector<long>* GetDate();
     };
     
   

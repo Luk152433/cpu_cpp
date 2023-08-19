@@ -24,11 +24,13 @@ namespace buf{
     };
     
     template <typename T>
-    buffer<T>::buffer():bufList(10,std::vector<T>(1,(""))),maxSize{10}
+    buffer<T>::buffer():bufList(10,std::vector<T>{}),maxSize{10}
     {
         head=bufList.begin();
         tail=bufList.begin();
     }
+
+
 
     template <typename T>
     void buffer<T>::bufferSetValue(std::vector<T>* reciveValue){

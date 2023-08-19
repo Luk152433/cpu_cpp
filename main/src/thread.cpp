@@ -1,9 +1,14 @@
 #include "header.h"
 std::string tab="/proc/stat";
 buf::buffer <std::string> Obj_BuferRedAna;
+buf::buffer <long> Obj_BuferAnaPrin;
 std::mutex ra_mut;
 std::condition_variable ra_prod;
 std::condition_variable ra_cons;
+
+std::mutex ap_mut;
+std::condition_variable ap_prod;
+std::condition_variable ap_cons;
 
 void RunReader(){
 
@@ -64,8 +69,18 @@ void RunAnalizer(){
       // std::cout << str << std::endl;
        //  }
         Obj_Analizer.CountRate();
-        //Obj_Analizer.write();
+        Obj_Analizer.write();
         Obj_Analizer.changePtr();
+
+
+         //{
+        //std::unique_lock<std::mutex> Prod_Ana(ap_mut);
+       // ap_prod.wait(Prod_Ana,[] () { return Obj_BuferAnaPrin.GetValueUseBuf()<10;});
+
+        Obj_BuferAnaPrin.bufferSetValue(Obj_Analizer.GetDate());
+
+        // ap_cons.notify_one();
+        // }   
         
 
          i--;

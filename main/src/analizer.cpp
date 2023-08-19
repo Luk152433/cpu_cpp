@@ -1,9 +1,9 @@
 #include "header.h"
 
 
-    ana::Analizer::Analizer(int nr):ptrCurrentDate(new AssignDateS[nr]),ptrPrevDate(new AssignDateS[nr]),ptrAllPercentValue(new long[nr])
+    ana::Analizer::Analizer(int nr):ptrCurrentDate(new AssignDateS[nr]),ptrPrevDate(new AssignDateS[nr])
 {
-
+    AllPercentValue.resize(nr);
 }
 
 ana::Analizer::Analizer(){
@@ -76,7 +76,7 @@ void ana::Analizer::CountRate()
         double idled = (double)Idle - (double)PrevIdle;
         
  
-        ptrAllPercentValue[i]=(1000*(totald - idled)/totald+1)/10;
+        AllPercentValue[i]=(1000*(totald - idled)/totald+1)/10;
 
     }
 
@@ -88,7 +88,7 @@ void ana::Analizer::write()
 {
     for(int i=0;i<2;i++)
     {
-        std::cout<<ptrAllPercentValue[i]<<std::endl;
+        std::cout<<AllPercentValue[i]<<std::endl;
     }
     std::cout<<std::endl;
 }
@@ -102,3 +102,7 @@ void ana::Analizer::changePtr()
     return;
 }
 
+std::vector<long>* ana::Analizer::GetDate()
+{
+    return &AllPercentValue;
+}
