@@ -63,8 +63,10 @@ void RunAnalizer(){
      //      for (const std::string& str : temp) {
       // std::cout << str << std::endl;
        //  }
-
+        Obj_Analizer.CountRate();
+        //Obj_Analizer.write();
         Obj_Analizer.changePtr();
+        
 
          i--;
        sleep(1);

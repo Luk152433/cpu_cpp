@@ -1,7 +1,7 @@
 #include "header.h"
 
 
-    ana::Analizer::Analizer(int nr):ptrCurrentDate(new AssignDateS[nr]),ptrPrevDate(new AssignDateS[nr])
+    ana::Analizer::Analizer(int nr):ptrCurrentDate(new AssignDateS[nr]),ptrPrevDate(new AssignDateS[nr]),ptrAllPercentValue(new long[nr])
 {
 
 }
@@ -41,17 +41,17 @@ ana::Analizer::~Analizer(){
         ptrCurrentDate[i].guest     =   std::stol(chopString[9],nullptr,10);
         ptrCurrentDate[i].guestNice =   std::stol(chopString[10],nullptr,10);
       
-        std::cout <<ptrCurrentDate[i].cpuName<<" ";
-        std::cout <<ptrCurrentDate[i].user<<" ";
-        std::cout <<ptrCurrentDate[i].nice<<" ";
-        std::cout <<ptrCurrentDate[i].system<<" ";
-        std::cout <<ptrCurrentDate[i].idle<<" ";
-        std::cout <<ptrCurrentDate[i].iowait<<" ";
-        std::cout <<ptrCurrentDate[i].irq<<" ";
-        std::cout <<ptrCurrentDate[i].softirq<<" ";
-        std::cout <<ptrCurrentDate[i].steal<<" ";
-        std::cout <<ptrCurrentDate[i].guest<<" ";
-        std::cout <<ptrCurrentDate[i].guestNice<<std::endl;
+        // std::cout <<ptrCurrentDate[i].cpuName<<" ";
+        // std::cout <<ptrCurrentDate[i].user<<" ";
+        // std::cout <<ptrCurrentDate[i].nice<<" ";
+        // std::cout <<ptrCurrentDate[i].system<<" ";
+        // std::cout <<ptrCurrentDate[i].idle<<" ";
+        // std::cout <<ptrCurrentDate[i].iowait<<" ";
+        // std::cout <<ptrCurrentDate[i].irq<<" ";
+        // std::cout <<ptrCurrentDate[i].softirq<<" ";
+        // std::cout <<ptrCurrentDate[i].steal<<" ";
+        // std::cout <<ptrCurrentDate[i].guest<<" ";
+        // std::cout <<ptrCurrentDate[i].guestNice<<std::endl;
 
         i++;
     }
@@ -59,7 +59,39 @@ ana::Analizer::~Analizer(){
     return;
  }
 
+void ana::Analizer::CountRate()
+{
+    for(uint8_t i=0;i<2;i++)
+    {
+        long PrevIdle = ptrPrevDate[i].idle + ptrPrevDate[i].iowait;
+        long Idle = ptrCurrentDate[i].idle +  ptrCurrentDate[i].iowait;
 
+        long PrevNonIdle = ptrPrevDate[i].user + ptrPrevDate[i].nice + ptrPrevDate[i].system + ptrPrevDate[i].irq + ptrPrevDate[i].softirq + ptrPrevDate[i].steal;  
+        long NonIdle = ptrCurrentDate[i].user + ptrCurrentDate[i].nice + ptrCurrentDate[i].system + ptrCurrentDate[i].irq + ptrCurrentDate[i].softirq + ptrCurrentDate[i].steal;
+
+        long PrevTotal = PrevIdle + PrevNonIdle;
+        long Total = Idle + NonIdle;
+
+        double totald = (double)Total - (double)PrevTotal;
+        double idled = (double)Idle - (double)PrevIdle;
+        
+ 
+        ptrAllPercentValue[i]=(1000*(totald - idled)/totald+1)/10;
+
+    }
+
+    return;
+
+}
+
+void ana::Analizer::write()
+{
+    for(int i=0;i<2;i++)
+    {
+        std::cout<<ptrAllPercentValue[i]<<std::endl;
+    }
+    std::cout<<std::endl;
+}
 
 void ana::Analizer::changePtr()
 {
