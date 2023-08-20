@@ -154,6 +154,30 @@ analizer.cpp.s:
 	cd /home/acad/Documents/CPU/cpu_cpp/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Function.dir/build.make src/CMakeFiles/Function.dir/analizer.cpp.s
 .PHONY : analizer.cpp.s
 
+printer.o: printer.cpp.o
+.PHONY : printer.o
+
+# target to build an object file
+printer.cpp.o:
+	cd /home/acad/Documents/CPU/cpu_cpp/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Function.dir/build.make src/CMakeFiles/Function.dir/printer.cpp.o
+.PHONY : printer.cpp.o
+
+printer.i: printer.cpp.i
+.PHONY : printer.i
+
+# target to preprocess a source file
+printer.cpp.i:
+	cd /home/acad/Documents/CPU/cpu_cpp/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Function.dir/build.make src/CMakeFiles/Function.dir/printer.cpp.i
+.PHONY : printer.cpp.i
+
+printer.s: printer.cpp.s
+.PHONY : printer.s
+
+# target to generate assembly for a file
+printer.cpp.s:
+	cd /home/acad/Documents/CPU/cpu_cpp/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Function.dir/build.make src/CMakeFiles/Function.dir/printer.cpp.s
+.PHONY : printer.cpp.s
+
 reader.o: reader.cpp.o
 .PHONY : reader.o
 
@@ -214,6 +238,9 @@ help:
 	@echo "... analizer.o"
 	@echo "... analizer.i"
 	@echo "... analizer.s"
+	@echo "... printer.o"
+	@echo "... printer.i"
+	@echo "... printer.s"
 	@echo "... reader.o"
 	@echo "... reader.i"
 	@echo "... reader.s"

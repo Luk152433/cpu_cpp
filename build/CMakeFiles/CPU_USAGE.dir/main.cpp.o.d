@@ -311,4 +311,5 @@ CMakeFiles/CPU_USAGE.dir/main.cpp.o: \
  /home/acad/Documents/CPU/cpu_cpp/main/include/reader.h \
  /home/acad/Documents/CPU/cpu_cpp/main/include/thread.h \
  /home/acad/Documents/CPU/cpu_cpp/main/include/buffer.h \
- /home/acad/Documents/CPU/cpu_cpp/main/include/analizer.h
+ /home/acad/Documents/CPU/cpu_cpp/main/include/analizer.h \
+ /home/acad/Documents/CPU/cpu_cpp/main/include/printer.h

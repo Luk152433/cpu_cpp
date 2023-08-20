@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/acad/Documents/CPU/cpu_cpp/main/src/analizer.cpp" "src/CMakeFiles/Function.dir/analizer.cpp.o" "gcc" "src/CMakeFiles/Function.dir/analizer.cpp.o.d"
+  "/home/acad/Documents/CPU/cpu_cpp/main/src/printer.cpp" "src/CMakeFiles/Function.dir/printer.cpp.o" "gcc" "src/CMakeFiles/Function.dir/printer.cpp.o.d"
   "/home/acad/Documents/CPU/cpu_cpp/main/src/reader.cpp" "src/CMakeFiles/Function.dir/reader.cpp.o" "gcc" "src/CMakeFiles/Function.dir/reader.cpp.o.d"
   "/home/acad/Documents/CPU/cpu_cpp/main/src/thread.cpp" "src/CMakeFiles/Function.dir/thread.cpp.o" "gcc" "src/CMakeFiles/Function.dir/thread.cpp.o.d"
   )

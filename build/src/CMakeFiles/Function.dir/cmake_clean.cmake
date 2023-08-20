@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Function.dir/analizer.cpp.o"
   "CMakeFiles/Function.dir/analizer.cpp.o.d"
+  "CMakeFiles/Function.dir/printer.cpp.o"
+  "CMakeFiles/Function.dir/printer.cpp.o.d"
   "CMakeFiles/Function.dir/reader.cpp.o"
   "CMakeFiles/Function.dir/reader.cpp.o.d"
   "CMakeFiles/Function.dir/thread.cpp.o"

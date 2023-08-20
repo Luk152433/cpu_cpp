@@ -1,5 +1,5 @@
-src/CMakeFiles/Function.dir/analizer.cpp.o: \
- /home/acad/Documents/CPU/cpu_cpp/main/src/analizer.cpp \
+src/CMakeFiles/Function.dir/printer.cpp.o: \
+ /home/acad/Documents/CPU/cpu_cpp/main/src/printer.cpp \
  /usr/include/stdc-predef.h \
  /home/acad/Documents/CPU/cpu_cpp/main/include/header.h \
  /usr/include/c++/11/iostream \

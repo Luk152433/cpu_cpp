@@ -6,12 +6,8 @@
     AllPercentValue.resize(nr);
 }
 
-ana::Analizer::Analizer(){
-
-}
-ana::Analizer::~Analizer(){
-
-}
+ana::Analizer::Analizer()=default;
+ana::Analizer::~Analizer()=default;
 
  void ana::Analizer::SetRawData(std::vector<std::string> buferDate)
  {  

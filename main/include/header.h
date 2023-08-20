@@ -17,6 +17,7 @@
 #include "thread.h"
 #include "buffer.h"
 #include "analizer.h"
+#include "printer.h"
 
 
 

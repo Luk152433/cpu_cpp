@@ -404,7 +404,8 @@ CMakeFiles/CPU_USAGE.dir/main.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/main.
   /home/acad/Documents/CPU/cpu_cpp/main/include/reader.h \
   /home/acad/Documents/CPU/cpu_cpp/main/include/thread.h \
   /home/acad/Documents/CPU/cpu_cpp/main/include/buffer.h \
-  /home/acad/Documents/CPU/cpu_cpp/main/include/analizer.h
+  /home/acad/Documents/CPU/cpu_cpp/main/include/analizer.h \
+  /home/acad/Documents/CPU/cpu_cpp/main/include/printer.h
 
 
 /home/acad/Documents/CPU/cpu_cpp/main/include/analizer.h:
@@ -830,6 +831,8 @@ CMakeFiles/CPU_USAGE.dir/main.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/main.
 /usr/include/c++/11/ciso646:
 
 /usr/include/asm-generic/errno-base.h:
+
+/home/acad/Documents/CPU/cpu_cpp/main/include/printer.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
