@@ -13,7 +13,7 @@ ana::Analizer::~Analizer()=default;
  {  
     int i=0;
 
-    while(i<2)
+    while(i<4)
     {   
         std::string parsBuff{};
         std::stringstream stringToStrim(buferDate[i]);
@@ -57,7 +57,7 @@ ana::Analizer::~Analizer()=default;
 
 void ana::Analizer::CountRate()
 {
-    for(uint8_t i=0;i<2;i++)
+    for(uint8_t i=0;i<4;i++)
     {
         long PrevIdle = ptrPrevDate[i].idle + ptrPrevDate[i].iowait;
         long Idle = ptrCurrentDate[i].idle +  ptrCurrentDate[i].iowait;
@@ -82,7 +82,7 @@ void ana::Analizer::CountRate()
 
 void ana::Analizer::write()
 {
-    for(int i=0;i<2;i++)
+    for(int i=0;i<4;i++)
     {
         std::cout<<AllPercentValue[i]<<std::endl;
     }

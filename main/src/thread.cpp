@@ -47,7 +47,7 @@ void RunReader(){
 void RunAnalizer(){
 
  int i=30;
-   ana::Analizer Obj_Analizer(2);
+   ana::Analizer Obj_Analizer(4);
 
  while (i)
     {   
@@ -92,7 +92,7 @@ void RunAnalizer(){
 void RunPrinter(){
 
  int i=30;
-   pri::Printer Obj_Printer(2);
+   pri::Printer Obj_Printer(4);
 
  while (i)
     {   

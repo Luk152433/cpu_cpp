@@ -5,7 +5,7 @@ rea::Reader::Reader(std::string arg_path):path(arg_path)
 {
 
 }
-rea::Reader::~Reader(){}
+rea::Reader::~Reader()=default;
 
 void rea::Reader::OpenSourceFile()
 {
@@ -32,7 +32,7 @@ void rea::Reader::ReadSourceFile()
     vec.clear();
     std::vector<std::string>::iterator iter=vec.begin();
     int i=0;
-    while(getline(infile,line)  && i<2   ){
+    while(getline(infile,line)  && i<4   ){
         
         vec.push_back(line);
         line.clear();
@@ -47,7 +47,7 @@ std::vector<std::string>* rea::Reader::GetDate()
 
 void rea::Reader::write()
 {   int i=0;
-    while (i<2)
+    while (i<4)
     {
             std::cout<<vec[i]<<std::endl;
         i++;

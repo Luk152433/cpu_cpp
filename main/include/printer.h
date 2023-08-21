@@ -10,6 +10,7 @@ namespace pri{
 
     public:
         Printer(int nr);
+        Printer();
         ~Printer();
         void SetprecentDate(std::vector<long>);
         void PrintDate();
