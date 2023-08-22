@@ -30,9 +30,8 @@ void rea::Reader::ReadSourceFile()
 {   
     std::string line{};
     vec.clear();
-    std::vector<std::string>::iterator iter=vec.begin();
     int i=0;
-    while(getline(infile,line)  && i<4   ){
+    while(getline(infile,line)  && i<NUM_CPU   ){
         
         vec.push_back(line);
         line.clear();
@@ -47,7 +46,7 @@ std::vector<std::string>* rea::Reader::GetDate()
 
 void rea::Reader::write()
 {   int i=0;
-    while (i<4)
+    while (i<NUM_CPU)
     {
             std::cout<<vec[i]<<std::endl;
         i++;

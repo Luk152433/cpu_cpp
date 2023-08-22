@@ -1,4 +1,5 @@
 #include "header.h"
+
 std::string tab="/proc/stat";
 buf::buffer <std::string> Obj_BuferRedAna;
 buf::buffer <long> Obj_BuferAnaPrin;
@@ -71,24 +72,19 @@ void RunAnalizer(){
         ra_prod.notify_one();
         }  
         
-        // std::cout<<temp[0];
-//         std::cout<<temp[1];
-     //      for (const std::string& str : temp) {
-      // std::cout << str << std::endl;
-       //  }
+
         Obj_Analizer.CountRate();
-        //Obj_Analizer.write();
         Obj_Analizer.changePtr();
 
 
-         {
+        {
         std::unique_lock<std::mutex> Prod_Ana(ap_mut);
         ap_prod.wait(Prod_Ana,[] () { return Obj_BuferAnaPrin.GetValueUseBuf()<10;});
 
         Obj_BuferAnaPrin.bufferSetValue(Obj_Analizer.GetDate());
 
         ap_cons.notify_one();
-         }   
+        }   
         
         Ptr_Watchdog->SetTime(std::this_thread::get_id());
          i--;
@@ -111,7 +107,7 @@ void RunPrinter(){
         std::unique_lock<std::mutex> Cons_Pri(ap_mut);
         ap_cons.wait(Cons_Pri,[] () { return Obj_BuferAnaPrin.GetValueUseBuf()>0;});
 
-        //temp=(Obj_BuferRedAna.bufferGetValue());
+      
         Obj_Printer.SetprecentDate(Obj_BuferAnaPrin.bufferGetValue());
 
         ap_cons.notify_one();

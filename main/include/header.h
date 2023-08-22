@@ -1,3 +1,4 @@
+#define NUM_CPU 4
 #include <iostream>
 #include <fstream>
 #include <sstream>

@@ -35,8 +35,8 @@ namespace ana{
         void SetRawData(std::vector<std::string> buferDate);
         void CountRate();
         void changePtr();
-         void write();
-         std::vector<long>* GetDate();
+        void write();
+        std::vector<long>* GetDate();
     };
     
   

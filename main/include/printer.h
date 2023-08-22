@@ -5,15 +5,15 @@ namespace pri{
 
     class Printer
     {
-    private:
-        std::vector<long> precentDate{};
+        private:
+            std::vector<long> precentDate{};
 
-    public:
-        Printer(int nr);
-        Printer();
-        ~Printer();
-        void SetprecentDate(std::vector<long>);
-        void PrintDate();
+        public:
+            Printer(int nr);
+            Printer();
+            ~Printer();
+            void SetprecentDate(std::vector<long>);
+            void PrintDate();
 
     };
 

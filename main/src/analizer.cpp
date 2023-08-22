@@ -1,7 +1,7 @@
 #include "header.h"
 
 
-    ana::Analizer::Analizer(int nr):ptrCurrentDate(new AssignDateS[nr]),ptrPrevDate(new AssignDateS[nr])
+ana::Analizer::Analizer(int nr):ptrCurrentDate(new AssignDateS[nr]),ptrPrevDate(new AssignDateS[nr])
 {
     AllPercentValue.resize(nr);
 }
@@ -13,7 +13,7 @@ ana::Analizer::~Analizer()=default;
  {  
     int i=0;
 
-    while(i<4)
+    while(i<NUM_CPU)
     {   
         std::string parsBuff{};
         std::stringstream stringToStrim(buferDate[i]);
@@ -37,17 +37,6 @@ ana::Analizer::~Analizer()=default;
         ptrCurrentDate[i].guest     =   std::stol(chopString[9],nullptr,10);
         ptrCurrentDate[i].guestNice =   std::stol(chopString[10],nullptr,10);
       
-        // std::cout <<ptrCurrentDate[i].cpuName<<" ";
-        // std::cout <<ptrCurrentDate[i].user<<" ";
-        // std::cout <<ptrCurrentDate[i].nice<<" ";
-        // std::cout <<ptrCurrentDate[i].system<<" ";
-        // std::cout <<ptrCurrentDate[i].idle<<" ";
-        // std::cout <<ptrCurrentDate[i].iowait<<" ";
-        // std::cout <<ptrCurrentDate[i].irq<<" ";
-        // std::cout <<ptrCurrentDate[i].softirq<<" ";
-        // std::cout <<ptrCurrentDate[i].steal<<" ";
-        // std::cout <<ptrCurrentDate[i].guest<<" ";
-        // std::cout <<ptrCurrentDate[i].guestNice<<std::endl;
 
         i++;
     }

@@ -186,40 +186,45 @@ CMakeFiles/CPU_USAGE.dir/main.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/main.
   /usr/include/c++/11/bits/fstream.tcc \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/bits/sstream.tcc \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/ctime \
+  /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/stl_map.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/queue \
   /usr/include/c++/11/deque \
   /usr/include/c++/11/bits/stl_deque.h \
   /usr/include/c++/11/bits/deque.tcc \
   /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/stl_queue.h \
-  /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/list \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/bits/list.tcc \
   /usr/include/c++/11/iterator \
   /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/bits/unique_ptr.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
-  /usr/include/c++/11/chrono \
-  /usr/include/c++/11/ratio \
-  /usr/include/c++/11/limits \
-  /usr/include/c++/11/ctime \
-  /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/mutex \
   /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/bits/unique_lock.h \
@@ -346,11 +351,6 @@ CMakeFiles/CPU_USAGE.dir/main.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/main.
   /usr/include/libintl.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
-  /usr/include/c++/11/map \
-  /usr/include/c++/11/bits/stl_tree.h \
-  /usr/include/c++/11/bits/stl_map.h \
-  /usr/include/c++/11/bits/stl_multimap.h \
-  /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/numeric \
   /usr/include/c++/11/bits/stl_numeric.h \
   /usr/include/c++/11/set \
@@ -402,11 +402,11 @@ CMakeFiles/CPU_USAGE.dir/main.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/main.
   /usr/include/c++/11/unordered_set \
   /usr/include/c++/11/bits/unordered_set.h \
   /home/acad/Documents/CPU/cpu_cpp/main/include/reader.h \
-  /home/acad/Documents/CPU/cpu_cpp/main/include/thread.h \
   /home/acad/Documents/CPU/cpu_cpp/main/include/buffer.h \
   /home/acad/Documents/CPU/cpu_cpp/main/include/analizer.h \
   /home/acad/Documents/CPU/cpu_cpp/main/include/printer.h \
-  /home/acad/Documents/CPU/cpu_cpp/main/include/watchdog.h
+  /home/acad/Documents/CPU/cpu_cpp/main/include/watchdog.h \
+  /home/acad/Documents/CPU/cpu_cpp/main/include/thread.h
 
 
 /home/acad/Documents/CPU/cpu_cpp/main/include/analizer.h:
@@ -468,14 +468,6 @@ CMakeFiles/CPU_USAGE.dir/main.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/main.
 /usr/include/c++/11/bits/stl_numeric.h:
 
 /usr/include/c++/11/numeric:
-
-/usr/include/c++/11/bits/stl_multimap.h:
-
-/usr/include/c++/11/bits/stl_map.h:
-
-/usr/include/c++/11/bits/stl_tree.h:
-
-/usr/include/c++/11/map:
 
 /usr/include/c++/11/bits/locale_facets_nonio.tcc:
 
@@ -586,6 +578,16 @@ CMakeFiles/CPU_USAGE.dir/main.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/main.
 /usr/include/c++/11/cassert:
 
 /usr/include/c++/11/backward/auto_ptr.h:
+
+/usr/include/c++/11/bits/valarray_array.tcc:
+
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
+
+/usr/include/c++/11/bits/atomic_base.h:
+
+/usr/include/c++/11/bit:
+
+/usr/include/c++/11/bits/align.h:
 
 /usr/include/c++/11/fstream:
 
@@ -731,6 +733,8 @@ CMakeFiles/CPU_USAGE.dir/main.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/main.
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
+/usr/include/c++/11/bits/stl_tree.h:
+
 /usr/include/c++/11/tuple:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
@@ -805,9 +809,9 @@ CMakeFiles/CPU_USAGE.dir/main.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/main.
 
 /usr/include/c++/11/ext/numeric_traits.h:
 
-/usr/include/c++/11/bits/atomic_base.h:
-
 /usr/include/features.h:
+
+/usr/include/c++/11/bits/stl_multimap.h:
 
 /usr/include/c++/11/unordered_set:
 
@@ -816,6 +820,12 @@ CMakeFiles/CPU_USAGE.dir/main.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/main.
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/c++/11/bits/regex.h:
+
+/usr/include/c++/11/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/11/queue:
 
 /usr/include/c++/11/cstdarg:
 
@@ -911,13 +921,13 @@ CMakeFiles/CPU_USAGE.dir/main.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/main.
 
 /usr/include/c++/11/cstdlib:
 
-/usr/include/c++/11/bit:
-
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/c++/11/iterator:
 
 /usr/include/c++/11/bits/range_access.h:
+
+/usr/include/c++/11/map:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
@@ -966,14 +976,6 @@ CMakeFiles/CPU_USAGE.dir/main.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/main.
 /usr/include/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-/usr/include/c++/11/bits/erase_if.h:
-
-/usr/include/c++/11/bits/ptr_traits.h:
-
-/usr/include/stdint.h:
-
-/usr/include/endian.h:
 
 /usr/include/c++/11/future:
 
@@ -1055,10 +1057,6 @@ CMakeFiles/CPU_USAGE.dir/main.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/main.
 
 /usr/include/c++/11/bits/streambuf.tcc:
 
-/usr/include/c++/11/bits/valarray_array.tcc:
-
-/usr/include/c++/11/bits/atomic_lockfree_defines.h:
-
 /usr/include/c++/11/bits/uniform_int_dist.h:
 
 /usr/include/c++/11/bits/basic_ios.h:
@@ -1115,11 +1113,21 @@ CMakeFiles/CPU_USAGE.dir/main.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/main.
 
 /usr/include/c++/11/sstream:
 
+/usr/include/c++/11/condition_variable:
+
+/usr/include/linux/const.h:
+
+/usr/include/c++/11/thread:
+
+/usr/include/c++/11/ratio:
+
+/usr/include/c++/11/limits:
+
+/usr/include/c++/11/bits/parse_numbers.h:
+
 /usr/include/c++/11/vector:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
-/usr/include/c++/11/bits/align.h:
 
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
@@ -1130,6 +1138,24 @@ CMakeFiles/CPU_USAGE.dir/main.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/main.
 /usr/include/c++/11/bits/stl_bvector.h:
 
 /usr/include/c++/11/bits/vector.tcc:
+
+/usr/include/c++/11/bits/stl_map.h:
+
+/usr/include/c++/11/bits/regex_compiler.tcc:
+
+/usr/include/limits.h:
+
+/usr/include/c++/11/bits/stl_relops.h:
+
+/usr/include/c++/11/array:
+
+/usr/include/c++/11/bits/ptr_traits.h:
+
+/usr/include/stdint.h:
+
+/usr/include/endian.h:
+
+/usr/include/c++/11/bits/erase_if.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
@@ -1149,35 +1175,9 @@ CMakeFiles/CPU_USAGE.dir/main.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/main.
 
 /usr/include/c++/11/bits/std_thread.h:
 
-/usr/include/c++/11/bits/regex_compiler.tcc:
-
-/usr/include/limits.h:
-
-/usr/include/c++/11/bits/stl_relops.h:
-
-/usr/include/c++/11/array:
-
 /usr/include/linux/stddef.h:
 
 /usr/include/c++/11/bits/refwrap.h:
-
-/usr/include/c++/11/condition_variable:
-
-/usr/include/linux/const.h:
-
-/usr/include/c++/11/thread:
-
-/usr/include/c++/11/ratio:
-
-/usr/include/c++/11/limits:
-
-/usr/include/c++/11/bits/parse_numbers.h:
-
-/usr/include/c++/11/bits/regex.h:
-
-/usr/include/c++/11/queue:
-
-/usr/include/c++/11/bits/shared_ptr_atomic.h:
 
 /usr/include/c++/11/bits/uses_allocator.h:
 
