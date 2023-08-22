@@ -1,4 +1,4 @@
-add_library(Function reader.cpp analizer.cpp thread.cpp)
+add_library(Function reader.cpp printer.cpp watchdog.cpp analizer.cpp thread.cpp)
 
 
 target_include_directories(Function 

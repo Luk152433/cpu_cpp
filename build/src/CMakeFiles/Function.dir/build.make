@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/acad/Documents/c++/CPU/main
+CMAKE_SOURCE_DIR = /home/acad/Documents/CPU/cpu_cpp/main
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/acad/Documents/c++/CPU/build
+CMAKE_BINARY_DIR = /home/acad/Documents/CPU/cpu_cpp/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/Function.dir/depend.make
@@ -70,58 +70,106 @@ include src/CMakeFiles/Function.dir/progress.make
 include src/CMakeFiles/Function.dir/flags.make
 
 src/CMakeFiles/Function.dir/reader.cpp.o: src/CMakeFiles/Function.dir/flags.make
-src/CMakeFiles/Function.dir/reader.cpp.o: /home/acad/Documents/c++/CPU/main/src/reader.cpp
+src/CMakeFiles/Function.dir/reader.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/src/reader.cpp
 src/CMakeFiles/Function.dir/reader.cpp.o: src/CMakeFiles/Function.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/acad/Documents/c++/CPU/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/Function.dir/reader.cpp.o"
-	cd /home/acad/Documents/c++/CPU/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Function.dir/reader.cpp.o -MF CMakeFiles/Function.dir/reader.cpp.o.d -o CMakeFiles/Function.dir/reader.cpp.o -c /home/acad/Documents/c++/CPU/main/src/reader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/acad/Documents/CPU/cpu_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/Function.dir/reader.cpp.o"
+	cd /home/acad/Documents/CPU/cpu_cpp/build/src && /bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Function.dir/reader.cpp.o -MF CMakeFiles/Function.dir/reader.cpp.o.d -o CMakeFiles/Function.dir/reader.cpp.o -c /home/acad/Documents/CPU/cpu_cpp/main/src/reader.cpp
 
 src/CMakeFiles/Function.dir/reader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Function.dir/reader.cpp.i"
-	cd /home/acad/Documents/c++/CPU/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/acad/Documents/c++/CPU/main/src/reader.cpp > CMakeFiles/Function.dir/reader.cpp.i
+	cd /home/acad/Documents/CPU/cpu_cpp/build/src && /bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/acad/Documents/CPU/cpu_cpp/main/src/reader.cpp > CMakeFiles/Function.dir/reader.cpp.i
 
 src/CMakeFiles/Function.dir/reader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Function.dir/reader.cpp.s"
-	cd /home/acad/Documents/c++/CPU/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/acad/Documents/c++/CPU/main/src/reader.cpp -o CMakeFiles/Function.dir/reader.cpp.s
+	cd /home/acad/Documents/CPU/cpu_cpp/build/src && /bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/acad/Documents/CPU/cpu_cpp/main/src/reader.cpp -o CMakeFiles/Function.dir/reader.cpp.s
+
+src/CMakeFiles/Function.dir/printer.cpp.o: src/CMakeFiles/Function.dir/flags.make
+src/CMakeFiles/Function.dir/printer.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/src/printer.cpp
+src/CMakeFiles/Function.dir/printer.cpp.o: src/CMakeFiles/Function.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/acad/Documents/CPU/cpu_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/Function.dir/printer.cpp.o"
+	cd /home/acad/Documents/CPU/cpu_cpp/build/src && /bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Function.dir/printer.cpp.o -MF CMakeFiles/Function.dir/printer.cpp.o.d -o CMakeFiles/Function.dir/printer.cpp.o -c /home/acad/Documents/CPU/cpu_cpp/main/src/printer.cpp
+
+src/CMakeFiles/Function.dir/printer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Function.dir/printer.cpp.i"
+	cd /home/acad/Documents/CPU/cpu_cpp/build/src && /bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/acad/Documents/CPU/cpu_cpp/main/src/printer.cpp > CMakeFiles/Function.dir/printer.cpp.i
+
+src/CMakeFiles/Function.dir/printer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Function.dir/printer.cpp.s"
+	cd /home/acad/Documents/CPU/cpu_cpp/build/src && /bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/acad/Documents/CPU/cpu_cpp/main/src/printer.cpp -o CMakeFiles/Function.dir/printer.cpp.s
+
+src/CMakeFiles/Function.dir/watchdog.cpp.o: src/CMakeFiles/Function.dir/flags.make
+src/CMakeFiles/Function.dir/watchdog.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/src/watchdog.cpp
+src/CMakeFiles/Function.dir/watchdog.cpp.o: src/CMakeFiles/Function.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/acad/Documents/CPU/cpu_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/Function.dir/watchdog.cpp.o"
+	cd /home/acad/Documents/CPU/cpu_cpp/build/src && /bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Function.dir/watchdog.cpp.o -MF CMakeFiles/Function.dir/watchdog.cpp.o.d -o CMakeFiles/Function.dir/watchdog.cpp.o -c /home/acad/Documents/CPU/cpu_cpp/main/src/watchdog.cpp
+
+src/CMakeFiles/Function.dir/watchdog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Function.dir/watchdog.cpp.i"
+	cd /home/acad/Documents/CPU/cpu_cpp/build/src && /bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/acad/Documents/CPU/cpu_cpp/main/src/watchdog.cpp > CMakeFiles/Function.dir/watchdog.cpp.i
+
+src/CMakeFiles/Function.dir/watchdog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Function.dir/watchdog.cpp.s"
+	cd /home/acad/Documents/CPU/cpu_cpp/build/src && /bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/acad/Documents/CPU/cpu_cpp/main/src/watchdog.cpp -o CMakeFiles/Function.dir/watchdog.cpp.s
+
+src/CMakeFiles/Function.dir/analizer.cpp.o: src/CMakeFiles/Function.dir/flags.make
+src/CMakeFiles/Function.dir/analizer.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/src/analizer.cpp
+src/CMakeFiles/Function.dir/analizer.cpp.o: src/CMakeFiles/Function.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/acad/Documents/CPU/cpu_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/Function.dir/analizer.cpp.o"
+	cd /home/acad/Documents/CPU/cpu_cpp/build/src && /bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Function.dir/analizer.cpp.o -MF CMakeFiles/Function.dir/analizer.cpp.o.d -o CMakeFiles/Function.dir/analizer.cpp.o -c /home/acad/Documents/CPU/cpu_cpp/main/src/analizer.cpp
+
+src/CMakeFiles/Function.dir/analizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Function.dir/analizer.cpp.i"
+	cd /home/acad/Documents/CPU/cpu_cpp/build/src && /bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/acad/Documents/CPU/cpu_cpp/main/src/analizer.cpp > CMakeFiles/Function.dir/analizer.cpp.i
+
+src/CMakeFiles/Function.dir/analizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Function.dir/analizer.cpp.s"
+	cd /home/acad/Documents/CPU/cpu_cpp/build/src && /bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/acad/Documents/CPU/cpu_cpp/main/src/analizer.cpp -o CMakeFiles/Function.dir/analizer.cpp.s
 
 src/CMakeFiles/Function.dir/thread.cpp.o: src/CMakeFiles/Function.dir/flags.make
-src/CMakeFiles/Function.dir/thread.cpp.o: /home/acad/Documents/c++/CPU/main/src/thread.cpp
+src/CMakeFiles/Function.dir/thread.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/src/thread.cpp
 src/CMakeFiles/Function.dir/thread.cpp.o: src/CMakeFiles/Function.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/acad/Documents/c++/CPU/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/Function.dir/thread.cpp.o"
-	cd /home/acad/Documents/c++/CPU/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Function.dir/thread.cpp.o -MF CMakeFiles/Function.dir/thread.cpp.o.d -o CMakeFiles/Function.dir/thread.cpp.o -c /home/acad/Documents/c++/CPU/main/src/thread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/acad/Documents/CPU/cpu_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/Function.dir/thread.cpp.o"
+	cd /home/acad/Documents/CPU/cpu_cpp/build/src && /bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Function.dir/thread.cpp.o -MF CMakeFiles/Function.dir/thread.cpp.o.d -o CMakeFiles/Function.dir/thread.cpp.o -c /home/acad/Documents/CPU/cpu_cpp/main/src/thread.cpp
 
 src/CMakeFiles/Function.dir/thread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Function.dir/thread.cpp.i"
-	cd /home/acad/Documents/c++/CPU/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/acad/Documents/c++/CPU/main/src/thread.cpp > CMakeFiles/Function.dir/thread.cpp.i
+	cd /home/acad/Documents/CPU/cpu_cpp/build/src && /bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/acad/Documents/CPU/cpu_cpp/main/src/thread.cpp > CMakeFiles/Function.dir/thread.cpp.i
 
 src/CMakeFiles/Function.dir/thread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Function.dir/thread.cpp.s"
-	cd /home/acad/Documents/c++/CPU/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/acad/Documents/c++/CPU/main/src/thread.cpp -o CMakeFiles/Function.dir/thread.cpp.s
+	cd /home/acad/Documents/CPU/cpu_cpp/build/src && /bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/acad/Documents/CPU/cpu_cpp/main/src/thread.cpp -o CMakeFiles/Function.dir/thread.cpp.s
 
 # Object files for target Function
 Function_OBJECTS = \
 "CMakeFiles/Function.dir/reader.cpp.o" \
+"CMakeFiles/Function.dir/printer.cpp.o" \
+"CMakeFiles/Function.dir/watchdog.cpp.o" \
+"CMakeFiles/Function.dir/analizer.cpp.o" \
 "CMakeFiles/Function.dir/thread.cpp.o"
 
 # External object files for target Function
 Function_EXTERNAL_OBJECTS =
 
 src/libFunction.a: src/CMakeFiles/Function.dir/reader.cpp.o
+src/libFunction.a: src/CMakeFiles/Function.dir/printer.cpp.o
+src/libFunction.a: src/CMakeFiles/Function.dir/watchdog.cpp.o
+src/libFunction.a: src/CMakeFiles/Function.dir/analizer.cpp.o
 src/libFunction.a: src/CMakeFiles/Function.dir/thread.cpp.o
 src/libFunction.a: src/CMakeFiles/Function.dir/build.make
 src/libFunction.a: src/CMakeFiles/Function.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/acad/Documents/c++/CPU/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libFunction.a"
-	cd /home/acad/Documents/c++/CPU/build/src && $(CMAKE_COMMAND) -P CMakeFiles/Function.dir/cmake_clean_target.cmake
-	cd /home/acad/Documents/c++/CPU/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Function.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/acad/Documents/CPU/cpu_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libFunction.a"
+	cd /home/acad/Documents/CPU/cpu_cpp/build/src && $(CMAKE_COMMAND) -P CMakeFiles/Function.dir/cmake_clean_target.cmake
+	cd /home/acad/Documents/CPU/cpu_cpp/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Function.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/Function.dir/build: src/libFunction.a
 .PHONY : src/CMakeFiles/Function.dir/build
 
 src/CMakeFiles/Function.dir/clean:
-	cd /home/acad/Documents/c++/CPU/build/src && $(CMAKE_COMMAND) -P CMakeFiles/Function.dir/cmake_clean.cmake
+	cd /home/acad/Documents/CPU/cpu_cpp/build/src && $(CMAKE_COMMAND) -P CMakeFiles/Function.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/Function.dir/clean
 
 src/CMakeFiles/Function.dir/depend:
-	cd /home/acad/Documents/c++/CPU/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/acad/Documents/c++/CPU/main /home/acad/Documents/c++/CPU/main/src /home/acad/Documents/c++/CPU/build /home/acad/Documents/c++/CPU/build/src /home/acad/Documents/c++/CPU/build/src/CMakeFiles/Function.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/acad/Documents/CPU/cpu_cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/acad/Documents/CPU/cpu_cpp/main /home/acad/Documents/CPU/cpu_cpp/main/src /home/acad/Documents/CPU/cpu_cpp/build /home/acad/Documents/CPU/cpu_cpp/build/src /home/acad/Documents/CPU/cpu_cpp/build/src/CMakeFiles/Function.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/Function.dir/depend
 

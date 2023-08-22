@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/CPU_USAGE.dir/main.cpp.o -o CPU_USAGE  src/libFunction.a 
+/bin/g++ CMakeFiles/CPU_USAGE.dir/main.cpp.o -o CPU_USAGE  src/libFunction.a 

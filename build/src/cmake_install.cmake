@@ -1,4 +1,4 @@
-# Install script for directory: /home/acad/Documents/c++/CPU/main/src
+# Install script for directory: /home/acad/Documents/CPU/cpu_cpp/main/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
