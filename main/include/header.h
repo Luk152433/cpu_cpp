@@ -1,8 +1,10 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <chrono>
 #include <string>
 #include <vector>
+#include <map>
 #include <queue>
 #include <list>
 #include <iterator>
@@ -14,10 +16,11 @@
 #include <memory>
 #include <bits/stdc++.h>
 #include "reader.h"
-#include "thread.h"
 #include "buffer.h"
 #include "analizer.h"
 #include "printer.h"
+#include "watchdog.h"
+#include "thread.h"
 
 
 

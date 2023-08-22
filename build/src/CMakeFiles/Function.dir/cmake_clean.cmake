@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Function.dir/reader.cpp.o.d"
   "CMakeFiles/Function.dir/thread.cpp.o"
   "CMakeFiles/Function.dir/thread.cpp.o.d"
+  "CMakeFiles/Function.dir/watchdog.cpp.o"
+  "CMakeFiles/Function.dir/watchdog.cpp.o.d"
   "libFunction.a"
   "libFunction.pdb"
 )

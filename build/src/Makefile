@@ -226,6 +226,30 @@ thread.cpp.s:
 	cd /home/acad/Documents/CPU/cpu_cpp/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Function.dir/build.make src/CMakeFiles/Function.dir/thread.cpp.s
 .PHONY : thread.cpp.s
 
+watchdog.o: watchdog.cpp.o
+.PHONY : watchdog.o
+
+# target to build an object file
+watchdog.cpp.o:
+	cd /home/acad/Documents/CPU/cpu_cpp/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Function.dir/build.make src/CMakeFiles/Function.dir/watchdog.cpp.o
+.PHONY : watchdog.cpp.o
+
+watchdog.i: watchdog.cpp.i
+.PHONY : watchdog.i
+
+# target to preprocess a source file
+watchdog.cpp.i:
+	cd /home/acad/Documents/CPU/cpu_cpp/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Function.dir/build.make src/CMakeFiles/Function.dir/watchdog.cpp.i
+.PHONY : watchdog.cpp.i
+
+watchdog.s: watchdog.cpp.s
+.PHONY : watchdog.s
+
+# target to generate assembly for a file
+watchdog.cpp.s:
+	cd /home/acad/Documents/CPU/cpu_cpp/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Function.dir/build.make src/CMakeFiles/Function.dir/watchdog.cpp.s
+.PHONY : watchdog.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -247,6 +271,9 @@ help:
 	@echo "... thread.o"
 	@echo "... thread.i"
 	@echo "... thread.s"
+	@echo "... watchdog.o"
+	@echo "... watchdog.i"
+	@echo "... watchdog.s"
 .PHONY : help
 
 

@@ -5,16 +5,22 @@ buf::buffer <long> Obj_BuferAnaPrin;
 std::mutex ra_mut;
 std::condition_variable ra_prod;
 std::condition_variable ra_cons;
-
+size_t numThr=3;
 std::mutex ap_mut;
 std::condition_variable ap_prod;
 std::condition_variable ap_cons;
+
+
+wat::Watchdog* Ptr_Watchdog=wat::Watchdog::GetInstanceS(numThr);
+  
+      
 
 void RunReader(){
 
     int i=30;
    rea::Reader Obj_Reader(tab);
    Obj_Reader.OpenSourceFile();
+   Ptr_Watchdog->SetId(std::this_thread::get_id(),"Reader",1);
 
     while (i)
     {
@@ -32,6 +38,7 @@ void RunReader(){
 
 
         Obj_Reader.ReOpenSourceFile();
+        Ptr_Watchdog->SetTime(std::this_thread::get_id());
         i--;
        sleep(1);
     }
@@ -48,6 +55,7 @@ void RunAnalizer(){
 
  int i=30;
    ana::Analizer Obj_Analizer(4);
+   Ptr_Watchdog->SetId(std::this_thread::get_id(),"Analizer",2);
 
  while (i)
     {   
@@ -82,7 +90,7 @@ void RunAnalizer(){
         ap_cons.notify_one();
          }   
         
-
+        Ptr_Watchdog->SetTime(std::this_thread::get_id());
          i--;
        sleep(1);
     }
@@ -93,7 +101,8 @@ void RunPrinter(){
 
  int i=30;
    pri::Printer Obj_Printer(4);
-
+    Ptr_Watchdog->SetId(std::this_thread::get_id(),"Printer",3);
+  
  while (i)
     {   
       
@@ -109,8 +118,19 @@ void RunPrinter(){
         }  
 
         Obj_Printer.PrintDate();
-  
+        Ptr_Watchdog->SetTime(std::this_thread::get_id());
         i--;
+       sleep(1);
+
+    }  
+}
+
+void RunWatchdog(){
+  int i=30;
+ while (i)
+    { 
+        Ptr_Watchdog->CheckTime();
+         i--;
        sleep(1);
 
     }  
@@ -121,9 +141,12 @@ void thr::runThread(){
     std::thread ReaderThread(RunReader);
     std::thread AnalizerThread(RunAnalizer);
     std::thread PrinterThread(RunPrinter);
+    std::thread WatchdogThread(RunWatchdog);
 
     ReaderThread.join();
     AnalizerThread.join();
     PrinterThread.join();
+    WatchdogThread.join();
 
 }
+

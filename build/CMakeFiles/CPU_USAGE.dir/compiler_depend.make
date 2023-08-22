@@ -405,7 +405,8 @@ CMakeFiles/CPU_USAGE.dir/main.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/main.
   /home/acad/Documents/CPU/cpu_cpp/main/include/thread.h \
   /home/acad/Documents/CPU/cpu_cpp/main/include/buffer.h \
   /home/acad/Documents/CPU/cpu_cpp/main/include/analizer.h \
-  /home/acad/Documents/CPU/cpu_cpp/main/include/printer.h
+  /home/acad/Documents/CPU/cpu_cpp/main/include/printer.h \
+  /home/acad/Documents/CPU/cpu_cpp/main/include/watchdog.h
 
 
 /home/acad/Documents/CPU/cpu_cpp/main/include/analizer.h:
@@ -521,6 +522,8 @@ CMakeFiles/CPU_USAGE.dir/main.cpp.o: /home/acad/Documents/CPU/cpu_cpp/main/main.
 /usr/include/x86_64-linux-gnu/bits/sigstksz.h:
 
 /usr/include/x86_64-linux-gnu/sys/ucontext.h:
+
+/home/acad/Documents/CPU/cpu_cpp/main/include/watchdog.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
 
